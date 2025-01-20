@@ -1,0 +1,31 @@
+﻿@model ToDoItem;
+
+<h2>Edit To-Do Item</h2>
+
+@*
+   create a form where users can edit the details of a specific item.
+*@
+
+<form asp-action="Edit" method="post">
+    <input type="hidden" asp-for="ID" />
+    <div class="form-group">
+        <label for="Title">Title</label>
+        <input type="text" class="form-control" id="Title" name="Title" value="@Model.Title" required />
+    </div>
+
+    <div class="form-group">
+        <label for="Description">Description</label>
+        <textarea class="form-control" id="Description" name="Description" required>@Model.Description</textarea>
+    </div>
+
+    <div class="form-group">
+        <label for="IsCompleted">Completed</label>
+        <input type="checkbox" id="IsCompleted" name="IsCompleted" @(Model.IsCompleted ? "checked" : "") />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Save Changes</button>
+</form>
+
+
+
+

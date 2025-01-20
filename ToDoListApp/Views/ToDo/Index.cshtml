@@ -1,0 +1,34 @@
+﻿@model List<ToDoItem>
+<h2>To-Do List</h2>
+
+@if (Model == null || !Model.Any())
+{
+    <p>No tasks available. <a asp-action="Create">Add one now!</a></p>
+}
+else{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Description</th>
+                <th>Completed</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.Title</td>
+                    <td>@item.Description</td>
+                    <td>@(item.IsCompleted ? "Yes" : "No")</td>
+                    <td>
+                        <a asp-action="Edit" asp-route-id="@item.ID" class="btn btn-primary">Edit</a>
+                        <a asp-action="Delete" asp-route-id="@item.ID" class="btn btn-danger">Delete</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
