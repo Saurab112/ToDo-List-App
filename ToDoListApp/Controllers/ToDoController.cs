@@ -5,9 +5,10 @@ namespace ToDoListApp.Controllers
 {
 	public class ToDoController : Controller
 	{
-		public List<ToDoItem> items_list { get; set; } = new List<ToDoItem>()
+		// Make the list static so it persists across different requests
+		public static List<ToDoItem> items_list { get; set; } = new List<ToDoItem>()
 		{
-			new ToDoItem { Title = "coding", Description = "work on linq", ID = 1},
+			new ToDoItem { Title = "coding", Description = "bbb", ID = 1},
 			new ToDoItem { Title = "abc", Description = "aaa", ID = 2}
 		};
 
@@ -15,6 +16,12 @@ namespace ToDoListApp.Controllers
 		{
 			return View(items_list);
 		}
+
+		public IActionResult Create()
+		{
+			return View();
+		}
+
 		[HttpGet]
 		public IActionResult Edit(int id)
 		{
@@ -37,13 +44,29 @@ namespace ToDoListApp.Controllers
 				existingItem.Description = item.Description;
 				existingItem.IsCompleted = item.IsCompleted;
 			}
-			
-			
 			return RedirectToAction("Index");
 		}
-		public IActionResult Delete()
+		[HttpGet]
+		public IActionResult Delete(int id)
 		{
-			return View();
+			ToDoItem? existingItemToDelete = items_list.FirstOrDefault(p => p.ID == id);
+			if (existingItemToDelete == null)
+			{
+				return NotFound();
+			}
+			return View(existingItemToDelete);
+		}
+
+		[HttpPost]
+		public IActionResult Delete(ToDoItem item)
+		{
+			ToDoItem? existingItemToDelete = items_list.FirstOrDefault(p => p.ID == item.ID);
+			if (existingItemToDelete == null)
+			{
+				return NotFound();
+			}
+			items_list.Remove(existingItemToDelete);
+			return RedirectToAction("Index");
 		}
 	}
 }

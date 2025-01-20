@@ -20,7 +20,7 @@
 
     <div class="form-group">
         <label for="IsCompleted">Completed</label>
-        <input type="checkbox" id="IsCompleted" name="IsCompleted" @(Model.IsCompleted ? "checked" : "") />
+        <input type="checkbox" id="IsCompleted" asp-for="IsCompleted" />
     </div>
 
     <button type="submit" class="btn btn-primary">Save Changes</button>
