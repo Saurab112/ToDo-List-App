@@ -1,1 +1,21 @@
-﻿
+﻿@model ToDoItem
+<h2>Create New Task</h2>
+
+<form asp-action="Create" method="post">
+	<div class = "form-group">
+		<label for="Title">Title</label>
+		<input type="text" class="form-control" id="Title" name="Title" value="@Model.Title" required />
+	</div>
+
+	<div class="form-group">
+		<label for="description">Description</label>
+		<textarea class="form-control" id="description" name="Description" required>@Model.Description</textarea>
+	</div>
+
+	<div class="form-group">
+		<label for="IsCompleted">Completed</label>
+		<input type="checkbox" id="IsCompleted" asp-for="IsCompleted"/>
+	</div>
+
+	<button type="submit" class="btn btn-dark">Add item</button>
+</form>

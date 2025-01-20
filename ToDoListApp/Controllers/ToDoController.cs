@@ -16,10 +16,19 @@ namespace ToDoListApp.Controllers
 		{
 			return View(items_list);
 		}
-
+		[HttpGet]
 		public IActionResult Create()
 		{
-			return View();
+			ToDoItem item = new ToDoItem();
+			return View(item);
+		}
+		[HttpPost]
+		public IActionResult Create(ToDoItem item)
+		{
+			//generate one id for the new item to be added
+			item.ID = items_list.Count + 1;
+			items_list.Add(item);
+			return RedirectToAction("Index");
 		}
 
 		[HttpGet]
@@ -36,7 +45,6 @@ namespace ToDoListApp.Controllers
 		[HttpPost]
 		public IActionResult Edit(ToDoItem item)
 		{
-			Console.WriteLine($"Received ID: {item.ID}, Title: {item.Title}, Description: {item.Description}, IsCompleted: {item.IsCompleted}");
 			var existingItem = items_list.FirstOrDefault(temp=>temp.ID == item.ID);
 			if (existingItem != null)
 			{
