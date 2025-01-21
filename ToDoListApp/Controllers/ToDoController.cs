@@ -8,11 +8,11 @@ namespace ToDoListApp.Controllers
 		// Make the list static so it persists across different requests
 		public static List<ToDoItem> items_list { get; set; } = new List<ToDoItem>()
 		{
-			new ToDoItem { Title = "coding", Description = "bbb", ID = 1},
-			new ToDoItem { Title = "abc", Description = "aaa", ID = 2}
+			new ToDoItem { Title = "herne katha", Description = "enjoy your free time with one episode of herne katha", ID = 1},
+			new ToDoItem { Title = "watering", Description = "I have to water the plants today at evening.", ID = 2}
 		};
 
-		public IActionResult Index()
+public IActionResult Index()
 		{
 			return View(items_list);
 		}
@@ -25,6 +25,10 @@ namespace ToDoListApp.Controllers
 		[HttpPost]
 		public IActionResult Create(ToDoItem item)
 		{
+			if (!ModelState.IsValid)
+			{
+				return View(item);
+			}
 			//generate one id for the new item to be added
 			item.ID = items_list.Count + 1;
 			items_list.Add(item);
