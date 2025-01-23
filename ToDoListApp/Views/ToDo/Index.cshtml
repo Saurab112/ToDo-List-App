@@ -2,6 +2,25 @@
 
 <h2>To-Do List</h2>
 
+<!-- Search and Clear Form -->
+<form asp-action="Index" method="get" class="mb-3">
+    <div class="form-group d-flex">
+        <!-- Search Input -->
+        <input type="text"
+               id="searchItem"
+               name="searchItem"
+               class="form-control mr-2"
+               placeholder="Enter keyword..."
+               value="@ViewBag.SearchItem" />
+
+        <!-- Search Button -->
+        <button type="submit" class="btn btn-primary">Search</button>
+
+        <!-- Clear Button -->
+        <a asp-action="Index" class="btn btn-secondary ml-2">Clear Search</a>
+    </div>
+</form>
+
 @if (Model == null || !Model.Any())
 {
     <p>No tasks available. <a asp-action="Create">Add one now!</a></p>

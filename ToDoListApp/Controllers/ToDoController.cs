@@ -12,9 +12,16 @@ namespace ToDoListApp.Controllers
 			new ToDoItem { Title = "watering", Description = "I have to water the plants today at evening.", ID = 2}
 		};
 
-public IActionResult Index()
+public IActionResult Index(string? searchItem)
 		{
-			return View(items_list);
+			List<ToDoItem> filteredItem = items_list;
+			if (!string.IsNullOrEmpty(searchItem))
+			{
+				filteredItem = items_list.Where(item => item.Title.Contains(searchItem, StringComparison.OrdinalIgnoreCase) || item.Description.Contains(searchItem, StringComparison.OrdinalIgnoreCase)).ToList();
+			}
+			ViewBag.SearchItem = searchItem;
+			return View(filteredItem);
+
 		}
 		[HttpGet]
 		public IActionResult Create()
@@ -79,6 +86,13 @@ public IActionResult Index()
 			}
 			items_list.Remove(existingItemToDelete);
 			return RedirectToAction("Index");
+		}
+
+		[HttpGet]
+		public IActionResult Search(int id)
+		{
+
+			return View();
 		}
 	}
 }
