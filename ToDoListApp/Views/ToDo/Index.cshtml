@@ -13,6 +13,19 @@
                placeholder="Enter keyword..."
                value="@ViewBag.SearchItem" />
 
+        <!-- status dropdown-->
+        <select id="statusFilter" name="statusFilter" class="form-control mr-2">
+            <option value="Notcompleted" selected='@(ViewBag.StatusFilter == "Notcompleted" ? "selected" : "")'>Not Completed</option>
+            <option value="Completed" selected='@(ViewBag.StatusFilter == "Completed" ? "selected" : "")'>Completed</option>
+            <option value="" selected='@(ViewBag.StatusFilter == null || ViewBag.StatusFilter == "" ? "selected" : "")'>-- Select Status --</option>
+           
+           
+        </select>
+
+
+
+               
+
         <!-- Search Button -->
         <button type="submit" class="btn btn-primary">Search</button>
 

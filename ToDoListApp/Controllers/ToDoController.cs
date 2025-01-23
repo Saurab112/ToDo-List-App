@@ -9,17 +9,33 @@ namespace ToDoListApp.Controllers
 		public static List<ToDoItem> items_list { get; set; } = new List<ToDoItem>()
 		{
 			new ToDoItem { Title = "herne katha", Description = "enjoy your free time with one episode of herne katha", ID = 1},
-			new ToDoItem { Title = "watering", Description = "I have to water the plants today at evening.", ID = 2}
+			new ToDoItem { Title = "watering", Description = "I have to water the plants today at evening.", ID = 2},
+			new ToDoItem { Title = "hello", Description = "11", IsCompleted = true}
 		};
 
-public IActionResult Index(string? searchItem)
+		[HttpGet]
+		public IActionResult Index(string? searchItem, string? statusFilter)
 		{
 			List<ToDoItem> filteredItem = items_list;
 			if (!string.IsNullOrEmpty(searchItem))
 			{
 				filteredItem = items_list.Where(item => item.Title.Contains(searchItem, StringComparison.OrdinalIgnoreCase) || item.Description.Contains(searchItem, StringComparison.OrdinalIgnoreCase)).ToList();
 			}
+
+			if (!string.IsNullOrEmpty(statusFilter))
+			{
+				if(statusFilter == "Completed")
+				{
+					filteredItem = items_list.Where(item=>item.IsCompleted).ToList();
+				}
+				else if(statusFilter == "NotCompleted")
+				{
+					filteredItem = items_list.Where(item => !item.IsCompleted).ToList();
+				}
+			}
+
 			ViewBag.SearchItem = searchItem;
+			ViewBag.StatusFilter = statusFilter;
 			return View(filteredItem);
 
 		}

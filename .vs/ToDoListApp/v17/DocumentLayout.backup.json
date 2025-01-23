@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "C:\\myLearnings\\ToDoListApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{28500759-46BD-4BBD-B93B-15A4120DD40E}|ToDoListApp\\ToDoListApp.csproj|c:\\mylearnings\\todolistapp\\todolistapp\\views\\todo\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{28500759-46BD-4BBD-B93B-15A4120DD40E}|ToDoListApp\\ToDoListApp.csproj|solutionrelative:todolistapp\\views\\todo\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{28500759-46BD-4BBD-B93B-15A4120DD40E}|ToDoListApp\\ToDoListApp.csproj|c:\\mylearnings\\todolistapp\\todolistapp\\views\\todo\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{28500759-46BD-4BBD-B93B-15A4120DD40E}|ToDoListApp\\ToDoListApp.csproj|solutionrelative:todolistapp\\views\\todo\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{28500759-46BD-4BBD-B93B-15A4120DD40E}|ToDoListApp\\ToDoListApp.csproj|c:\\mylearnings\\todolistapp\\todolistapp\\models\\todoitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28500759-46BD-4BBD-B93B-15A4120DD40E}|ToDoListApp\\ToDoListApp.csproj|solutionrelative:todolistapp\\models\\todoitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{28500759-46BD-4BBD-B93B-15A4120DD40E}|ToDoListApp\\ToDoListApp.csproj|c:\\mylearnings\\todolistapp\\todolistapp\\controllers\\todocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{28500759-46BD-4BBD-B93B-15A4120DD40E}|ToDoListApp\\ToDoListApp.csproj|solutionrelative:todolistapp\\controllers\\todocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{28500759-46BD-4BBD-B93B-15A4120DD40E}|ToDoListApp\\ToDoListApp.csproj|c:\\mylearnings\\todolistapp\\todolistapp\\models\\todoitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{28500759-46BD-4BBD-B93B-15A4120DD40E}|ToDoListApp\\ToDoListApp.csproj|solutionrelative:todolistapp\\models\\todoitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{28500759-46BD-4BBD-B93B-15A4120DD40E}|ToDoListApp\\ToDoListApp.csproj|c:\\mylearnings\\todolistapp\\todolistapp\\views\\todo\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{28500759-46BD-4BBD-B93B-15A4120DD40E}|ToDoListApp\\ToDoListApp.csproj|solutionrelative:todolistapp\\views\\todo\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28500759-46BD-4BBD-B93B-15A4120DD40E}|ToDoListApp\\ToDoListApp.csproj|c:\\mylearnings\\todolistapp\\todolistapp\\views\\todo\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{28500759-46BD-4BBD-B93B-15A4120DD40E}|ToDoListApp\\ToDoListApp.csproj|solutionrelative:todolistapp\\views\\todo\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,37 +26,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "ToDoItem.cs",
               "DocumentMoniker": "C:\\myLearnings\\ToDoListApp\\ToDoListApp\\Models\\ToDoItem.cs",
               "RelativeDocumentMoniker": "ToDoListApp\\Models\\ToDoItem.cs",
               "ToolTip": "C:\\myLearnings\\ToDoListApp\\ToDoListApp\\Models\\ToDoItem.cs",
               "RelativeToolTip": "ToDoListApp\\Models\\ToDoItem.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-23T04:04:14.06Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\myLearnings\\ToDoListApp\\ToDoListApp\\Views\\ToDo\\Index.cshtml",
               "RelativeDocumentMoniker": "ToDoListApp\\Views\\ToDo\\Index.cshtml",
               "ToolTip": "C:\\myLearnings\\ToDoListApp\\ToDoListApp\\Views\\ToDo\\Index.cshtml",
               "RelativeToolTip": "ToDoListApp\\Views\\ToDo\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAsAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-01-23T03:49:47.926Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\myLearnings\\ToDoListApp\\ToDoListApp\\Views\\ToDo\\Create.cshtml",
               "RelativeDocumentMoniker": "ToDoListApp\\Views\\ToDo\\Create.cshtml",
@@ -69,13 +69,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "ToDoController.cs",
               "DocumentMoniker": "C:\\myLearnings\\ToDoListApp\\ToDoListApp\\Controllers\\ToDoController.cs",
               "RelativeDocumentMoniker": "ToDoListApp\\Controllers\\ToDoController.cs",
               "ToolTip": "C:\\myLearnings\\ToDoListApp\\ToDoListApp\\Controllers\\ToDoController.cs",
               "RelativeToolTip": "ToDoListApp\\Controllers\\ToDoController.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAQwBUAAAAVAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-20T02:44:04.076Z",
               "EditorCaption": ""

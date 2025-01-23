@@ -10,7 +10,7 @@ namespace ToDoListApp.Models
 		[StringLength(20, ErrorMessage = "Title cannot exceed 20 characters")]
 		public string? Title { get; set; }
 
-		[StringLength(20, ErrorMessage = "Description cannot exceed 200 characters.")]
+		[StringLength(200, ErrorMessage = "Description cannot exceed 200 characters.")]
 		public string? Description { get; set; }
 		public bool IsCompleted { get; set; }
 	}
