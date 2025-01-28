@@ -28,11 +28,16 @@ namespace ToDoListApp.Controllers
 			// Apply search filter if any
 			if (!string.IsNullOrEmpty(searchItem))
 			{
-				filteredItem = _db.Items
+				// First, get all items from the database
+				var allItems = _db.Items.ToList();
+
+				// Then, perform filtering on the client-side
+				filteredItem = allItems
 					.Where(item => item.Title.Contains(searchItem, StringComparison.OrdinalIgnoreCase)
-								   || item.Description.Contains(searchItem, StringComparison.OrdinalIgnoreCase))
+								|| item.Description.Contains(searchItem, StringComparison.OrdinalIgnoreCase))
 					.ToList();
 			}
+
 
 			// Apply status filter if any
 			if (!string.IsNullOrEmpty(statusFilter))
