@@ -2,6 +2,7 @@
   "ExpandedNodes": [
     "",
     "\\ToDoListApp",
+    "\\ToDoListApp\\Controllers",
     "\\ToDoListApp\\Views",
     "\\ToDoListApp\\Views\\ToDo"
   ],

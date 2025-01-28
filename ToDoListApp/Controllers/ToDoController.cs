@@ -22,12 +22,19 @@ namespace ToDoListApp.Controllers
 		[HttpGet]
 		public IActionResult Index(string? searchItem, string? statusFilter)
 		{
+			// Fetch all items from the database
 			List<ToDoItem> filteredItem = _db.Items.ToList();
+
+			// Apply search filter if any
 			if (!string.IsNullOrEmpty(searchItem))
 			{
-				filteredItem = _db.Items.Where(item => item.Title.Contains(searchItem, StringComparison.OrdinalIgnoreCase) || item.Description.Contains(searchItem, StringComparison.OrdinalIgnoreCase)).ToList();
+				filteredItem = _db.Items
+					.Where(item => item.Title.Contains(searchItem, StringComparison.OrdinalIgnoreCase)
+								   || item.Description.Contains(searchItem, StringComparison.OrdinalIgnoreCase))
+					.ToList();
 			}
 
+			// Apply status filter if any
 			if (!string.IsNullOrEmpty(statusFilter))
 			{
 				if (statusFilter == "Completed")
@@ -40,6 +47,7 @@ namespace ToDoListApp.Controllers
 				}
 			}
 
+			// Pass search term and status filter to the view
 			ViewBag.SearchItem = searchItem;
 			ViewBag.StatusFilter = statusFilter;
 			return View(filteredItem);
@@ -60,8 +68,9 @@ namespace ToDoListApp.Controllers
 			}
 			item.CreatedDate = DateTime.Now;
 			//generate one id for the new item to be added
-			item.ID = _db.Items.ToList().Count + 1;
+			//item.ID = _db.Items.ToList().Count + 1; //Entity framework automatically creates id as its the primary key
 			_db.Add(item);
+			_db.SaveChanges();
 			return RedirectToAction("Index");
 		}
 
@@ -86,6 +95,7 @@ namespace ToDoListApp.Controllers
 				existingItem.Description = item.Description;
 				existingItem.IsCompleted = item.IsCompleted;
 			}
+			_db.SaveChanges();
 			return RedirectToAction("Index");
 		}
 		[HttpGet]
@@ -108,6 +118,7 @@ namespace ToDoListApp.Controllers
 				return NotFound();
 			}
 			_db.Remove(existingItemToDelete);
+			_db.SaveChanges();
 			return RedirectToAction("Index");
 		}
 
