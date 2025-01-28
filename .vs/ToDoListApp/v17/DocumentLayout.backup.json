@@ -3,20 +3,34 @@
   "WorkspaceRootPath": "C:\\myLearnings\\ToDoListApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{28500759-46BD-4BBD-B93B-15A4120DD40E}|ToDoListApp\\ToDoListApp.csproj|c:\\mylearnings\\todolistapp\\todolistapp\\models\\todoitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{28500759-46BD-4BBD-B93B-15A4120DD40E}|ToDoListApp\\ToDoListApp.csproj|solutionrelative:todolistapp\\models\\todoitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{28500759-46BD-4BBD-B93B-15A4120DD40E}|ToDoListApp\\ToDoListApp.csproj|c:\\mylearnings\\todolistapp\\todolistapp\\controllers\\todocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{28500759-46BD-4BBD-B93B-15A4120DD40E}|ToDoListApp\\ToDoListApp.csproj|solutionrelative:todolistapp\\controllers\\todocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{28500759-46BD-4BBD-B93B-15A4120DD40E}|ToDoListApp\\ToDoListApp.csproj|c:\\mylearnings\\todolistapp\\todolistapp\\views\\todo\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{28500759-46BD-4BBD-B93B-15A4120DD40E}|ToDoListApp\\ToDoListApp.csproj|solutionrelative:todolistapp\\views\\todo\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/ToDoAppDB/True/SqlTable/dbo.Items.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{28500759-46BD-4BBD-B93B-15A4120DD40E}|ToDoListApp\\ToDoListApp.csproj|c:\\mylearnings\\todolistapp\\todolistapp\\views\\todo\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{28500759-46BD-4BBD-B93B-15A4120DD40E}|ToDoListApp\\ToDoListApp.csproj|solutionrelative:todolistapp\\views\\todo\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{28500759-46BD-4BBD-B93B-15A4120DD40E}|ToDoListApp\\ToDoListApp.csproj|c:\\mylearnings\\todolistapp\\todolistapp\\models\\todoitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28500759-46BD-4BBD-B93B-15A4120DD40E}|ToDoListApp\\ToDoListApp.csproj|solutionrelative:todolistapp\\models\\todoitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\myLearnings\\ToDoListApp\\ToDoListApp\\Migrations\\20250128155231_Initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ToDoListApp\\Migrations\\20250128155231_Initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/ToDoAppDB/True/SqlTable/dbo.__EFMigrationsHistory.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28500759-46BD-4BBD-B93B-15A4120DD40E}|ToDoListApp\\ToDoListApp.csproj|c:\\mylearnings\\todolistapp\\todolistapp\\models\\tododbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28500759-46BD-4BBD-B93B-15A4120DD40E}|ToDoListApp\\ToDoListApp.csproj|solutionrelative:todolistapp\\models\\tododbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28500759-46BD-4BBD-B93B-15A4120DD40E}|ToDoListApp\\ToDoListApp.csproj|c:\\mylearnings\\todolistapp\\todolistapp\\todoitems.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{28500759-46BD-4BBD-B93B-15A4120DD40E}|ToDoListApp\\ToDoListApp.csproj|solutionrelative:todolistapp\\todoitems.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28500759-46BD-4BBD-B93B-15A4120DD40E}|ToDoListApp\\ToDoListApp.csproj|c:\\mylearnings\\todolistapp\\todolistapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28500759-46BD-4BBD-B93B-15A4120DD40E}|ToDoListApp\\ToDoListApp.csproj|solutionrelative:todolistapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,56 +40,102 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ToDoItem.cs",
-              "DocumentMoniker": "C:\\myLearnings\\ToDoListApp\\ToDoListApp\\Models\\ToDoItem.cs",
-              "RelativeDocumentMoniker": "ToDoListApp\\Models\\ToDoItem.cs",
-              "ToolTip": "C:\\myLearnings\\ToDoListApp\\ToDoListApp\\Models\\ToDoItem.cs",
-              "RelativeToolTip": "ToDoListApp\\Models\\ToDoItem.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-23T04:04:14.06Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\myLearnings\\ToDoListApp\\ToDoListApp\\Views\\ToDo\\Index.cshtml",
-              "RelativeDocumentMoniker": "ToDoListApp\\Views\\ToDo\\Index.cshtml",
-              "ToolTip": "C:\\myLearnings\\ToDoListApp\\ToDoListApp\\Views\\ToDo\\Index.cshtml",
-              "RelativeToolTip": "ToDoListApp\\Views\\ToDo\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-23T03:49:47.926Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\myLearnings\\ToDoListApp\\ToDoListApp\\Views\\ToDo\\Create.cshtml",
-              "RelativeDocumentMoniker": "ToDoListApp\\Views\\ToDo\\Create.cshtml",
-              "ToolTip": "C:\\myLearnings\\ToDoListApp\\ToDoListApp\\Views\\ToDo\\Create.cshtml",
-              "RelativeToolTip": "ToDoListApp\\Views\\ToDo\\Create.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAA+AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-23T03:36:34.786Z",
+              "DocumentIndex": 4,
+              "Title": "dbo.__EFMigrationsHistory [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/ToDoAppDB/True/SqlTable/dbo.__EFMigrationsHistory.sql",
+              "ToolTip": "dbo.__EFMigrationsHistory [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-01-28T15:55:16.456Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "dbo.Items [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/ToDoAppDB/True/SqlTable/dbo.Items.sql",
+              "ToolTip": "dbo.Items [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-01-28T15:55:02.536Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "20250128155231_Initial.cs",
+              "DocumentMoniker": "C:\\myLearnings\\ToDoListApp\\ToDoListApp\\Migrations\\20250128155231_Initial.cs",
+              "RelativeDocumentMoniker": "ToDoListApp\\Migrations\\20250128155231_Initial.cs",
+              "ToolTip": "C:\\myLearnings\\ToDoListApp\\ToDoListApp\\Migrations\\20250128155231_Initial.cs",
+              "RelativeToolTip": "ToDoListApp\\Migrations\\20250128155231_Initial.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-28T15:52:32.06Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ToDoItems.json",
+              "DocumentMoniker": "C:\\myLearnings\\ToDoListApp\\ToDoListApp\\ToDoItems.json",
+              "RelativeDocumentMoniker": "ToDoListApp\\ToDoItems.json",
+              "ToolTip": "C:\\myLearnings\\ToDoListApp\\ToDoListApp\\ToDoItems.json",
+              "RelativeToolTip": "ToDoListApp\\ToDoItems.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-01-28T15:44:24.529Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ToDoItem.cs",
+              "DocumentMoniker": "C:\\myLearnings\\ToDoListApp\\ToDoListApp\\Models\\ToDoItem.cs",
+              "RelativeDocumentMoniker": "ToDoListApp\\Models\\ToDoItem.cs",
+              "ToolTip": "C:\\myLearnings\\ToDoListApp\\ToDoListApp\\Models\\ToDoItem.cs",
+              "RelativeToolTip": "ToDoListApp\\Models\\ToDoItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-28T11:15:53.191Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\myLearnings\\ToDoListApp\\ToDoListApp\\Program.cs",
+              "RelativeDocumentMoniker": "ToDoListApp\\Program.cs",
+              "ToolTip": "C:\\myLearnings\\ToDoListApp\\ToDoListApp\\Program.cs",
+              "RelativeToolTip": "ToDoListApp\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-28T15:29:36.34Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ToDoDbContext.cs",
+              "DocumentMoniker": "C:\\myLearnings\\ToDoListApp\\ToDoListApp\\Models\\ToDoDbContext.cs",
+              "RelativeDocumentMoniker": "ToDoListApp\\Models\\ToDoDbContext.cs",
+              "ToolTip": "C:\\myLearnings\\ToDoListApp\\ToDoListApp\\Models\\ToDoDbContext.cs",
+              "RelativeToolTip": "ToDoListApp\\Models\\ToDoDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-28T11:14:48.004Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "ToDoController.cs",
               "DocumentMoniker": "C:\\myLearnings\\ToDoListApp\\ToDoListApp\\Controllers\\ToDoController.cs",
               "RelativeDocumentMoniker": "ToDoListApp\\Controllers\\ToDoController.cs",
               "ToolTip": "C:\\myLearnings\\ToDoListApp\\ToDoListApp\\Controllers\\ToDoController.cs",
               "RelativeToolTip": "ToDoListApp\\Controllers\\ToDoController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABKAAAAAAAAAA==",
+              "ViewState": "AgIAADAAAAAAAAAAAAAWwBsAAADGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-20T02:44:04.076Z",
               "EditorCaption": ""

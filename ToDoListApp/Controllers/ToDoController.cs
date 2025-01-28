@@ -5,32 +5,38 @@ namespace ToDoListApp.Controllers
 {
 	public class ToDoController : Controller
 	{
-		// Make the list static so it persists across different requests
-		public static List<ToDoItem> items_list { get; set; } = new List<ToDoItem>()
+		private readonly ToDoDbContext _db;
+		
+		public ToDoController(ToDoDbContext toDoDbContext)
 		{
-			new ToDoItem { Title = "herne katha", Description = "enjoy your free time with one episode of herne katha", ID = 1},
-			new ToDoItem { Title = "watering", Description = "I have to water the plants today at evening.", ID = 2},
-			new ToDoItem { Title = "hello", Description = "11", IsCompleted = true}
-		};
+			_db = toDoDbContext;
+		}
+		// Make the list static so it persists across different requests
+		//public static List<ToDoItem> _db { get; set; } = new List<ToDoItem>()
+		//{
+		//	new ToDoItem { Title = "herne katha", Description = "enjoy your free time with one episode of herne katha", ID = 1, CreatedDate = DateTime.Now.AddHours(4)},
+		//	new ToDoItem { Title = "watering", Description = "I have to water the plants today at evening.", ID = 2, CreatedDate = DateTime.Now.AddDays(-1)},
+		//	new ToDoItem { Title = "hello", Description = "11", IsCompleted = true, CreatedDate = DateTime.Now.AddDays(-2)}
+		//};
 
 		[HttpGet]
 		public IActionResult Index(string? searchItem, string? statusFilter)
 		{
-			List<ToDoItem> filteredItem = items_list;
+			List<ToDoItem> filteredItem = _db.Items.ToList();
 			if (!string.IsNullOrEmpty(searchItem))
 			{
-				filteredItem = items_list.Where(item => item.Title.Contains(searchItem, StringComparison.OrdinalIgnoreCase) || item.Description.Contains(searchItem, StringComparison.OrdinalIgnoreCase)).ToList();
+				filteredItem = _db.Items.Where(item => item.Title.Contains(searchItem, StringComparison.OrdinalIgnoreCase) || item.Description.Contains(searchItem, StringComparison.OrdinalIgnoreCase)).ToList();
 			}
 
 			if (!string.IsNullOrEmpty(statusFilter))
 			{
-				if(statusFilter == "Completed")
+				if (statusFilter == "Completed")
 				{
-					filteredItem = items_list.Where(item=>item.IsCompleted).ToList();
+					filteredItem = _db.Items.Where(item => item.IsCompleted).ToList();
 				}
-				else if(statusFilter == "NotCompleted")
+				else if (statusFilter == "NotCompleted")
 				{
-					filteredItem = items_list.Where(item => !item.IsCompleted).ToList();
+					filteredItem = _db.Items.Where(item => !item.IsCompleted).ToList();
 				}
 			}
 
@@ -52,16 +58,17 @@ namespace ToDoListApp.Controllers
 			{
 				return View(item);
 			}
+			item.CreatedDate = DateTime.Now;
 			//generate one id for the new item to be added
-			item.ID = items_list.Count + 1;
-			items_list.Add(item);
+			item.ID = _db.Items.ToList().Count + 1;
+			_db.Add(item);
 			return RedirectToAction("Index");
 		}
 
 		[HttpGet]
 		public IActionResult Edit(int id)
 		{
-			ToDoItem? item = items_list.FirstOrDefault(p=>p.ID == id);
+			ToDoItem? item = _db.Items.FirstOrDefault(p => p.ID == id);
 			if (item == null)
 			{
 				return NotFound();
@@ -72,7 +79,7 @@ namespace ToDoListApp.Controllers
 		[HttpPost]
 		public IActionResult Edit(ToDoItem item)
 		{
-			var existingItem = items_list.FirstOrDefault(temp=>temp.ID == item.ID);
+			var existingItem = _db.Items.FirstOrDefault(temp => temp.ID == item.ID);
 			if (existingItem != null)
 			{
 				existingItem.Title = item.Title;
@@ -84,7 +91,7 @@ namespace ToDoListApp.Controllers
 		[HttpGet]
 		public IActionResult Delete(int id)
 		{
-			ToDoItem? existingItemToDelete = items_list.FirstOrDefault(p => p.ID == id);
+			ToDoItem? existingItemToDelete = _db.Items.FirstOrDefault(p => p.ID == id);
 			if (existingItemToDelete == null)
 			{
 				return NotFound();
@@ -95,20 +102,14 @@ namespace ToDoListApp.Controllers
 		[HttpPost]
 		public IActionResult Delete(ToDoItem item)
 		{
-			ToDoItem? existingItemToDelete = items_list.FirstOrDefault(p => p.ID == item.ID);
+			ToDoItem? existingItemToDelete = _db.Items.FirstOrDefault(p => p.ID == item.ID);
 			if (existingItemToDelete == null)
 			{
 				return NotFound();
 			}
-			items_list.Remove(existingItemToDelete);
+			_db.Remove(existingItemToDelete);
 			return RedirectToAction("Index");
 		}
 
-		[HttpGet]
-		public IActionResult Search(int id)
-		{
-
-			return View();
-		}
 	}
 }

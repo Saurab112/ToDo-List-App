@@ -12,6 +12,8 @@ namespace ToDoListApp.Models
 
 		[StringLength(200, ErrorMessage = "Description cannot exceed 200 characters.")]
 		public string? Description { get; set; }
+
+		public DateTime CreatedDate { get; set; }
 		public bool IsCompleted { get; set; }
 	}
 }

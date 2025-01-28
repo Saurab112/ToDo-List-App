@@ -17,14 +17,8 @@
         <select id="statusFilter" name="statusFilter" class="form-control mr-2">
             <option value="Notcompleted" selected='@(ViewBag.StatusFilter == "Notcompleted" ? "selected" : "")'>Not Completed</option>
             <option value="Completed" selected='@(ViewBag.StatusFilter == "Completed" ? "selected" : "")'>Completed</option>
-            <option value="" selected='@(ViewBag.StatusFilter == null || ViewBag.StatusFilter == "" ? "selected" : "")'>-- Select Status --</option>
-           
-           
+            <option value="" selected='@(ViewBag.StatusFilter == null || ViewBag.StatusFilter == "" ? "selected" : "")'>-- Select Status --</option> 
         </select>
-
-
-
-               
 
         <!-- Search Button -->
         <button type="submit" class="btn btn-primary">Search</button>
@@ -42,9 +36,12 @@ else{
     <table class="table">
         <thead>
             <tr>
-                <th>Title</th>
+                <th>
+                    <a href="~/sorting" >Title</a>
+                </th>
                 <th>Description</th>
                 <th>Completed</th>
+                <th>Creation Date</th>
                 <th>Actions</th>
             </tr>
         </thead>
@@ -55,6 +52,7 @@ else{
                     <td>@item.Title</td>
                     <td>@item.Description</td>
                     <td>@(item.IsCompleted ? "Yes": "No")</td>
+                    <td>@(item.CreatedDate)</td>
                     <td>
                         <a asp-action="Edit" asp-route-id="@item.ID" class="btn btn-primary">Edit</a>
                         <a asp-action="Delete" asp-route-id="@item.ID" class="btn btn-danger">Delete</a>
