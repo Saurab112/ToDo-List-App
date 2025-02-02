@@ -30,6 +30,8 @@ Update-Database
 
 ![To-Do List App](https://github.com/Saurab112/ToDo-List-App/blob/master/Screenshot%202025-01-30%20221809.png?raw=true)
 
+![To-Do List App](https://github.com/Saurab112/ToDo-List-App/blob/master/screenshot.png?raw=true)
+
 Usage 🛠️
 ➕ Add a new task, ✏️ edit an existing one, or ❌ delete tasks.
 🔍 Use the search and filter options to find specific tasks.
